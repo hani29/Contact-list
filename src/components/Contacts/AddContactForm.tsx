@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { TextField, Button, Box } from '@material-ui/core';
-import SaveIcon from '@material-ui/icons/Save';
 import { makeStyles } from '@material-ui/core/styles';
 import axios from "helpers/apiReq";
 
@@ -81,7 +80,6 @@ const AddContact = (props: any) => {
         color="primary"
         size="medium"
         className={classes.button}
-        startIcon={<SaveIcon />}
         onClick={saveContact}
       >
         Save

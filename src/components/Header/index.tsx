@@ -4,7 +4,7 @@ import { resetCookie } from '../../helpers/cookie';
 import currentUser from 'helpers/currentUser';
 
 const handleLogin = () => {
-  window.location.href = process.env.REACT_APP_AUTH_URL as string;
+  window.location.href = process.env.REACT_APP_AUTH_URLs as string;
 }
 
 const handleLogout = () => {

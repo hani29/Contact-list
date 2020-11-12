@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     maxWidth: '500px',
-    backgroundColor: '#fff9f2',
+    backgroundColor: '#f7fafc',
     marginTop: '20px'
   },
   inline: {
@@ -56,6 +56,12 @@ const Contacts = (props: any) => {
 
   return (
     <Box className="w-full flex py-4 px-4">
+       <Box className="w-1/2 py-4 px-4 h-full">
+        <Typography variant="h6" component="div" color="textPrimary">
+          Add Contact
+        </Typography>
+        <AddContact refetchContacts={() => FetchContacts(setContacts)} />
+      </Box>
       <Box className="w-1/2 py-4 px-4">
         <Typography variant="h6" component="div" color="textPrimary">
           Contacts
@@ -101,12 +107,6 @@ const Contacts = (props: any) => {
             )
           )}
         </List>
-      </Box>
-      <Box className="w-1/2 py-4 px-4 h-full">
-        <Typography variant="h6" component="div" color="textPrimary">
-          Add Contact
-        </Typography>
-        <AddContact refetchContacts={() => FetchContacts(setContacts)} />
       </Box>
     </Box>
   );

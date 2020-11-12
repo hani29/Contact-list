@@ -9,7 +9,7 @@ const Contacts = (props: any) => {
     return (
       <Box className="w-full flex items-center py-4 px-4">
         <Typography variant="h6" component="div" color="textPrimary">
-          You need to go through auth process before accessing contact list. 
+          You need to go through auth process before accessing contact list. Please click on login to Allow access.
         </Typography>
       </Box>
     )
